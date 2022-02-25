@@ -1,1 +1,1 @@
-To detect whether there is a live human trying to access the system or someone illegally trying to log in to cause harm to us and embolden itself.
+What is liveness detection? Liveness detection in biometrics is the ability of a system to detect if a face is real (from a live person present at the point of capture) or fake (from a spoof artifact or lifeless body part).
