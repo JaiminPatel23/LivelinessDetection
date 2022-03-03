@@ -1,6 +1,3 @@
-# USAGE
-# python haar_face_detector.py --image images/adrian_01.png
-
 # import the necessary packages
 #import argparse 
 import imutils
@@ -17,12 +14,12 @@ args = vars(ap.parse_args())"""
 
 # load the haar cascade face detector from
 print("[INFO] loading face detector...")
-#1st edit       detector = cv2.CascadeClassifier(args["cascade"])
+#detector = cv2.CascadeClassifier(args["cascade"])
 detector = cv2.CascadeClassifier("haarcascade_frontalface_default.xml")
 
 # load the input image from disk, resize it, and convert it to
 # grayscale
-#2nd edit       image = cv2.imread(args["image"])
+#image = cv2.imread(args["image"])
 image = cv2.imread("Jaimin Patel Photo.jpg")
 image = imutils.resize(image, width=500)
 gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
