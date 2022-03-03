@@ -1,5 +1,3 @@
-### Import Packages
-
 # import the necessary packages
 from matplotlib import pyplot as plt
 from imutils import face_utils
@@ -64,7 +62,7 @@ while True:
                 break
         
         else:
-            print("More than one face detected. Please ensure you are in an isolated environment.")
+            print("More than 1 face detected. Please ensure you are in an isolated environment.")
             print("AND THEN TRY AGAIN")
 
 
