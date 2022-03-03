@@ -1,5 +1,3 @@
-### Import Packages
-
 # import the necessary packages
 from matplotlib import pyplot as plt
 from imutils import face_utils
@@ -12,8 +10,7 @@ import cv2
 ### Facial landmarks with dlib, OpenCV, and Python
 
 # construct the argument parser and parse the arguments
-'''
-ap = argparse.ArgumentParser()
+'''ap = argparse.ArgumentParser()
 ap.add_argument("-p", "--shape-predictor", required=True,
     help="path to facial landmark predictor")
 ap.add_argument("-i", "--image", required=True,
@@ -55,6 +52,6 @@ for (i, rect) in enumerate(rects):
 	for (x, y) in shape:
 		cv2.circle(image, (x, y), 1, (0, 0, 255), -1)
 
-# show the output image with the face detections + facial landmarks
+# show the output image with the face detection + facial landmarks
 cv2.imshow("Output", image)
 cv2.waitKey(0)
