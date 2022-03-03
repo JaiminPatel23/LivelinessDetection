@@ -1,6 +1,3 @@
-# USAGE
-# python video_face_detector.py
-
 # import the necessary packages
 from imutils.video import VideoStream
 #import argparse
