@@ -1,4 +1,3 @@
-#eye_blinking
 from scipy.spatial import distance as dist
 from imutils.video import FileVideoStream
 from imutils.video import VideoStream
@@ -21,7 +20,7 @@ def eye_aspect_ratio(eye):
 	# compute the eye aspect ratio
 	ear = (A + B) / (2.0 * C)
 
-	return ear
+	return ear		
  
 # argument parser
 """ap = argparse.ArgumentParser()
@@ -47,7 +46,7 @@ predictor = dlib.shape_predictor("shape_predictor_68_face_landmarks.dat")
 # indexes of the facial landmarks for the left and
 # right eye, respectively
 (lStart, lEnd) = face_utils.FACIAL_LANDMARKS_IDXS["left_eye"]
-(rStart, rEnd) = face_utils.FACIAL_LANDMARKS_IDXS["right_eye"]
+(rStart, rEnd) = face_utils.FACIAL_LANDMARKS_IDXS["right_eye"]     
 
 print("[INFO] starting video stream thread...")
 
